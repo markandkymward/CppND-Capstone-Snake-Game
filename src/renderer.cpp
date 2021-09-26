@@ -54,7 +54,7 @@ void Renderer::Render(Snake const snake, SDL_Point const &food,Snake const bad_s
   SDL_RenderFillRect(sdl_renderer, &block);
 
   //Render Poision
-  for(int i = 0; i < 5; i++){
+  for(int i = 0; i < 3; i++){
     SDL_SetRenderDrawColor(sdl_renderer, 150, 75, 0, 255);
     block.x = poison[i].x * block.w;
     block.y = poison[i].y * block.h;
@@ -70,7 +70,7 @@ void Renderer::Render(Snake const snake, SDL_Point const &food,Snake const bad_s
   }
 
   // Render bad_snake's body
-  SDL_SetRenderDrawColor(sdl_renderer, 0xFF, 0x00, 0x00, 0xFF);
+  SDL_SetRenderDrawColor(sdl_renderer, 0x00, 0xFF, 0x00, 0xFF);
   for (SDL_Point const &point : bad_snake.body) {
     block.x = point.x * block.w;
     block.y = point.y * block.h;

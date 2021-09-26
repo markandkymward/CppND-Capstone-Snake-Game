@@ -19,7 +19,7 @@ class Game {
  private:
   Snake snake,bad_snake;
   SDL_Point food;
-  SDL_Point poison[5];
+  SDL_Point poison[3];
 
   std::random_device dev;
   std::mt19937 engine;
