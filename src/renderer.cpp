@@ -38,7 +38,7 @@ Renderer::~Renderer() {
   SDL_Quit();
 }
 
-void Renderer::Render(Snake const snake, SDL_Point const &food) {
+void Renderer::Render(Snake const snake, SDL_Point const &food,Snake const bad_snake, SDL_Point poison[5]) {
   SDL_Rect block;
   block.w = screen_width / grid_width;
   block.h = screen_height / grid_height;
@@ -53,6 +53,14 @@ void Renderer::Render(Snake const snake, SDL_Point const &food) {
   block.y = food.y * block.h;
   SDL_RenderFillRect(sdl_renderer, &block);
 
+  //Render Poision
+  for(int i = 0; i < 5; i++){
+    SDL_SetRenderDrawColor(sdl_renderer, 150, 75, 0, 255);
+    block.x = poison[i].x * block.w;
+    block.y = poison[i].y * block.h;
+    SDL_RenderFillRect(sdl_renderer, &block);
+  }
+
   // Render snake's body
   SDL_SetRenderDrawColor(sdl_renderer, 0xFF, 0xFF, 0xFF, 0xFF);
   for (SDL_Point const &point : snake.body) {
@@ -60,6 +68,14 @@ void Renderer::Render(Snake const snake, SDL_Point const &food) {
     block.y = point.y * block.h;
     SDL_RenderFillRect(sdl_renderer, &block);
   }
+
+  // Render bad_snake's body
+  SDL_SetRenderDrawColor(sdl_renderer, 0xFF, 0x00, 0x00, 0xFF);
+  for (SDL_Point const &point : bad_snake.body) {
+    block.x = point.x * block.w;
+    block.y = point.y * block.h;
+    SDL_RenderFillRect(sdl_renderer, &block);
+  }  
 
   // Render snake's head
   block.x = static_cast<int>(snake.head_x) * block.w;
@@ -69,6 +85,12 @@ void Renderer::Render(Snake const snake, SDL_Point const &food) {
   } else {
     SDL_SetRenderDrawColor(sdl_renderer, 0xFF, 0x00, 0x00, 0xFF);
   }
+  SDL_RenderFillRect(sdl_renderer, &block);
+
+  //render bad_snake's head
+  block.x = static_cast<int>(bad_snake.head_x) * block.w;
+  block.y = static_cast<int>(bad_snake.head_y) * block.h;
+  SDL_SetRenderDrawColor(sdl_renderer, 0xFF, 0x00, 0x00, 0xFF);
   SDL_RenderFillRect(sdl_renderer, &block);
 
   // Update Screen

@@ -6,6 +6,7 @@
 #include "controller.h"
 #include "renderer.h"
 #include "snake.h"
+#include "vector"
 
 class Game {
  public:
@@ -16,8 +17,9 @@ class Game {
   int GetSize() const;
 
  private:
-  Snake snake;
+  Snake snake,bad_snake;
   SDL_Point food;
+  SDL_Point poison[5];
 
   std::random_device dev;
   std::mt19937 engine;
@@ -27,6 +29,7 @@ class Game {
   int score{0};
 
   void PlaceFood();
+  void PlacePoison();
   void Update();
 };
 
