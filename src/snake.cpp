@@ -54,9 +54,10 @@ void Snake::UpdateBody(SDL_Point &current_head_cell, SDL_Point &prev_head_cell) 
     growing = false;
     size++;
   }
+
   if (shrinking) {
     // Remove the tail from the vector and shrink one more.
-    if (size > 2){
+    if (sizeof(body) >  3){
       shrinking = false;
       body.erase(body.begin());
       body.erase(body.begin());

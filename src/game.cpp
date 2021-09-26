@@ -27,6 +27,7 @@ void Game::Run(Controller const &controller, Renderer &renderer,
     controller.HandleInput(running, snake);
     controller.RandomInput(running, bad_snake);
     Update();
+    if (!snake.alive){break;}
     renderer.Render(snake, food, bad_snake, poison);
 
     frame_end = SDL_GetTicks();
@@ -100,15 +101,19 @@ void Game::Update() {
     // Grow snake and increase speed.
     snake.GrowBody();
     bad_snake.GrowBody();
-    snake.speed += 0.02;
+    snake.speed += 0.01;
   }
-  for (int i = 0; i < 5; i++){
+  for (int i = 0; i < 3; i++){
     if (poison[i].x == new_x && poison[i].y == new_y) {
       if (score > 0){
         score --;
       }
       snake.ShrinkBody();
       snake.speed += 0.01;
+      if (sizeof(snake.body) < 1){
+        snake.alive = false;
+        return;
+      }
     }
   }
 }

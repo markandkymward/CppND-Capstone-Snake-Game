@@ -1,73 +1,43 @@
-#include <stdlib.h>
-#include <SDL2/SDL.h>
 #include <SDL2/SDL_ttf.h>
-#define WINDOW_WIDTH 300
-#define WINDOW_HEIGHT (WINDOW_WIDTH)
+#include "gameover.h"
 
-void get_text_and_rect(SDL_Renderer *renderer, int x, int y, char *text,
-        TTF_Font *font, SDL_Texture **texture, SDL_Rect *rect) {
-    int text_width;
-    int text_height;
-    SDL_Surface *surface;
-    SDL_Color textColor = {255, 255, 255, 0};
+void gameOver(Renderer &renderer, const char* message){
+    //this opens a font style and sets a size
+    TTF_Font* Sans = TTF_OpenFont("Sans.ttf", 24);
 
-    surface = TTF_RenderText_Solid(font, text, textColor);
-    *texture = SDL_CreateTextureFromSurface(renderer, surface);
-    text_width = surface->w;
-    text_height = surface->h;
-    SDL_FreeSurface(surface);
-    rect->x = x;
-    rect->y = y;
-    rect->w = text_width;
-    rect->h = text_height;
-}
+    // this is the color in rgb format,
+    // maxing out all would give you the color white,
+    // and it will be your text's color
+    SDL_Color White = {255, 255, 255};
 
-void gameOver()) {
-    SDL_Event event;
-    SDL_Rect rect1, rect2;
-    SDL_Renderer *renderer;
-    SDL_Texture *texture1, *texture2;
-    SDL_Window *window;
-    char *font_path;
-    int quit;
+    // as TTF_RenderText_Solid could only be used on
+    // SDL_Surface then you have to create the surface first
+    SDL_Surface* surfaceMessage =
+        TTF_RenderText_Solid(Sans, message, White); 
 
-    font_path = "FreeSans.ttf";
+    // now you can convert it into a texture
+    SDL_Texture* Message = SDL_CreateTextureFromSurface(renderer.sdl_renderer, surfaceMessage);
 
-    /* Inint TTF. */
-    SDL_Init(SDL_INIT_TIMER | SDL_INIT_VIDEO);
-    SDL_CreateWindowAndRenderer(WINDOW_WIDTH, WINDOW_WIDTH, 0, &window, &renderer);
-    TTF_Init();
-    TTF_Font *font = TTF_OpenFont(font_path, 24);
-    if (font == NULL) {
-        fprintf(stderr, "error: font not found\n");
-        exit(EXIT_FAILURE);
-    }
-    get_text_and_rect(renderer, 0, 0, "GAME", font, &texture1, &rect1);
-    get_text_and_rect(renderer, 0, rect1.y + rect1.h, "OVER", font, &texture2, &rect2);
-    quit = 0;
-    while (!quit) {
-        while (SDL_PollEvent(&event) == 1) {
-            if (event.type == SDL_QUIT) {
-                quit = 1;
-            }
-        }
-        SDL_SetRenderDrawColor(renderer, 0, 0, 0, 0);
-        SDL_RenderClear(renderer);
+    SDL_Rect Message_rect; //create a rect
+    Message_rect.x = 0;  //controls the rect's x coordinate 
+    Message_rect.y = 0; // controls the rect's y coordinte
+    Message_rect.w = 100; // controls the width of the rect
+    Message_rect.h = 100; // controls the height of the rect
 
-        /* Use TTF textures. */
-        SDL_RenderCopy(renderer, texture1, NULL, &rect1);
-        SDL_RenderCopy(renderer, texture2, NULL, &rect2);
+    // (0,0) is on the top left of the window/screen,
+    // think a rect as the text's box,
+    // that way it would be very simple to understand
 
-        SDL_RenderPresent(renderer);
-    }
+    // Now since it's a texture, you have to put RenderCopy
+    // in your game loop area, the area where the whole code executes
 
-    /* Deinit TTF. */
-    SDL_DestroyTexture(texture1);
-    SDL_DestroyTexture(texture2);
-    TTF_Quit();
+    // you put the renderer's name first, the Message,
+    // the crop size (you can ignore this if you don't want
+    // to dabble with cropping), and the rect which is the size
+    // and coordinate of your texture
+    SDL_RenderCopy(renderer, Message, NULL, &Message_rect);
 
-    SDL_DestroyRenderer(renderer);
-    SDL_DestroyWindow(window);
-    SDL_Quit();
-    return EXIT_SUCCESS;
+    // Don't forget to free your surface and texture
+    SDL_FreeSurface(surfaceMessage);
+    SDL_DestroyTexture(Message);
 }

@@ -6,45 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/e331095/git/workspace/CppND-Capstone-Snake-Game/src/controller.h
+/home/markward/git/workspace/CppND-Capstone-Snake-Game/src/snake.cpp
 snake.h
-/home/e331095/git/workspace/CppND-Capstone-Snake-Game/src/snake.h
-
-/home/e331095/git/workspace/CppND-Capstone-Snake-Game/src/game.cpp
-game.h
-/home/e331095/git/workspace/CppND-Capstone-Snake-Game/src/game.h
+/home/markward/git/workspace/CppND-Capstone-Snake-Game/src/snake.h
+cmath
+-
 iostream
 -
-SDL.h
-/home/e331095/git/workspace/CppND-Capstone-Snake-Game/src/SDL.h
 
-/home/e331095/git/workspace/CppND-Capstone-Snake-Game/src/game.h
-random
--
-SDL.h
-/home/e331095/git/workspace/CppND-Capstone-Snake-Game/src/SDL.h
-controller.h
-/home/e331095/git/workspace/CppND-Capstone-Snake-Game/src/controller.h
-renderer.h
-/home/e331095/git/workspace/CppND-Capstone-Snake-Game/src/renderer.h
-snake.h
-/home/e331095/git/workspace/CppND-Capstone-Snake-Game/src/snake.h
-vector
-/home/e331095/git/workspace/CppND-Capstone-Snake-Game/src/vector
-
-/home/e331095/git/workspace/CppND-Capstone-Snake-Game/src/renderer.h
+/home/markward/git/workspace/CppND-Capstone-Snake-Game/src/snake.h
 vector
 -
 SDL.h
-/home/e331095/git/workspace/CppND-Capstone-Snake-Game/src/SDL.h
-snake.h
-/home/e331095/git/workspace/CppND-Capstone-Snake-Game/src/snake.h
-
-/home/e331095/git/workspace/CppND-Capstone-Snake-Game/src/snake.h
-vector
--
-SDL.h
-/home/e331095/git/workspace/CppND-Capstone-Snake-Game/src/SDL.h
+/home/markward/git/workspace/CppND-Capstone-Snake-Game/src/SDL.h
 
 /usr/include/SDL2/SDL.h
 SDL_main.h

@@ -1,6 +1,7 @@
 #include "renderer.h"
 #include <iostream>
 #include <string>
+#include <SDL2/SDL_ttf.h>
 
 Renderer::Renderer(const std::size_t screen_width,
                    const std::size_t screen_height,
@@ -99,5 +100,10 @@ void Renderer::Render(Snake const snake, SDL_Point const &food,Snake const bad_s
 
 void Renderer::UpdateWindowTitle(int score, int fps) {
   std::string title{"Snake Score: " + std::to_string(score) + " FPS: " + std::to_string(fps)};
+  SDL_SetWindowTitle(sdl_window, title.c_str());
+}
+
+void Renderer::GameOver(){
+  std::string title{"-----=====GAME OVER=====-----"};
   SDL_SetWindowTitle(sdl_window, title.c_str());
 }
