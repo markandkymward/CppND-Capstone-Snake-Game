@@ -3,6 +3,15 @@
 #include "SDL.h"
 #include "snake.h"
 
+#include <cstdlib>
+#include <ctime>
+
+int randNum(int min, int max)
+{
+   return rand() % max + min;
+}
+
+
 void Controller::ChangeDirection(Snake &snake, Snake::Direction input,
                                  Snake::Direction opposite) const {
   if (snake.direction != opposite || snake.size == 1) snake.direction = input;
@@ -37,5 +46,31 @@ void Controller::HandleInput(bool &running, Snake &snake) const {
           break;
       }
     }
+  }
+}
+
+void Controller::RandomInput(bool &running, Snake &snake) const {
+  srand(time(0));
+  int input = randNum(1,4);
+  switch (input) {
+    case 1:
+      ChangeDirection(snake, Snake::Direction::kUp,
+                      Snake::Direction::kDown);
+      break;
+
+    case 2:
+      ChangeDirection(snake, Snake::Direction::kDown,
+                      Snake::Direction::kUp);
+      break;
+
+    case 3:
+      ChangeDirection(snake, Snake::Direction::kLeft,
+                      Snake::Direction::kRight);
+      break;
+
+    case 4:
+      ChangeDirection(snake, Snake::Direction::kRight,
+                      Snake::Direction::kLeft);
+      break;
   }
 }
