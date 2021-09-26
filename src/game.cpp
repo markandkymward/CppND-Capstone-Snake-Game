@@ -19,6 +19,8 @@ void Game::Run(Controller const &controller, Renderer &renderer,
   Uint32 frame_duration;
   int frame_count = 0;
   bool running = true;
+  bool collision = false;
+
 
   while (running) {
     frame_start = SDL_GetTicks();
@@ -27,7 +29,7 @@ void Game::Run(Controller const &controller, Renderer &renderer,
     controller.HandleInput(running, snake);
     controller.RandomInput(running, bad_snake);
     Update();
-    if (!snake.alive){break;}
+    std::cout << "Collision: " << SnakeCollide(snake, bad_snake) << std::endl;
     renderer.Render(snake, food, bad_snake, poison);
 
     frame_end = SDL_GetTicks();
@@ -39,7 +41,7 @@ void Game::Run(Controller const &controller, Renderer &renderer,
 
     // After every second, update the window title.
     if (frame_end - title_timestamp >= 1000) {
-      renderer.UpdateWindowTitle(score, frame_count);
+      renderer.UpdateWindowTitle(score, lives, frame_count);
       frame_count = 0;
       title_timestamp = frame_end;
     }
@@ -93,10 +95,9 @@ void Game::Update() {
 
   int new_x = static_cast<int>(snake.head_x);
   int new_y = static_cast<int>(snake.head_y);
-
+  score = snake.size;
   // Check if there's food over here
   if (food.x == new_x && food.y == new_y) {
-    score++;
     PlaceFood();
     // Grow snake and increase speed.
     snake.GrowBody();
@@ -105,18 +106,23 @@ void Game::Update() {
   }
   for (int i = 0; i < 3; i++){
     if (poison[i].x == new_x && poison[i].y == new_y) {
-      if (score > 0){
-        score --;
-      }
       snake.ShrinkBody();
-      snake.speed += 0.01;
-      if (sizeof(snake.body) < 1){
-        snake.alive = false;
-        return;
-      }
+      PlacePoison();
     }
   }
 }
-
+bool Game::SnakeCollide(Snake snake1, Snake snake2){
+  bool collide {false};
+  for (auto &item1 : snake1.body){
+    for (auto &item2 : snake2.body){
+      if (item1.x == item2.x && item1.y == item2.y){
+        collide = true;
+        break;
+      }
+    }
+  }
+  return collide; 
+}
 int Game::GetScore() const { return score; }
-int Game::GetSize() const { return snake.size; }
+int Game::GetSnakeSize() const { return snake.size; }
+int Game::GetBadSnakeSize() const { return bad_snake.size; }

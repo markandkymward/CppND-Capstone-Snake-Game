@@ -13,8 +13,11 @@ class Game {
   Game(std::size_t grid_width, std::size_t grid_height);
   void Run(Controller const &controller, Renderer &renderer,
            std::size_t target_frame_duration);
+  bool SnakeCollide(Snake snake1, Snake snake2);
   int GetScore() const;
-  int GetSize() const;
+  int GetSnakeSize() const;
+  int GetBadSnakeSize() const;
+  
 
  private:
   Snake snake,bad_snake;
@@ -27,7 +30,7 @@ class Game {
   std::uniform_int_distribution<int> random_h;
 
   int score{0};
-
+  int lives{5}; 
   void PlaceFood();
   void PlacePoison();
   void Update();
