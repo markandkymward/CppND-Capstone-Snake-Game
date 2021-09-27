@@ -19,7 +19,8 @@ void Game::Run(Controller const &controller, Renderer &renderer,
   Uint32 frame_duration;
   int frame_count = 0;
   bool running = true;
-  bool collision = false;
+  bool old_collision = false;
+  bool new_collision = false;
 
 
   while (running) {
@@ -28,10 +29,18 @@ void Game::Run(Controller const &controller, Renderer &renderer,
     // Input, Update, Render - the main game loop.
     controller.HandleInput(running, snake);
     controller.RandomInput(running, bad_snake);
+    old_collision = collide;
     Update();
-    std::cout << "Collision: " << SnakeCollide(snake, bad_snake) << std::endl;
+    new_collision = collide;
+    if (new_collision != old_collision){
+      lives --;
+    } else{
+      old_collision = new_collision;
+    }
     renderer.Render(snake, food, bad_snake, poison);
-
+    if (lives == 0){
+      running = false;
+    }
     frame_end = SDL_GetTicks();
 
     // Keep track of how long each loop through the input/update/render cycle
@@ -110,6 +119,7 @@ void Game::Update() {
       PlacePoison();
     }
   }
+  collide = SnakeCollide(snake,bad_snake);
 }
 bool Game::SnakeCollide(Snake snake1, Snake snake2){
   bool collide {false};

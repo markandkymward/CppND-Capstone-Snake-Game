@@ -31,6 +31,7 @@ class Game {
 
   int score{0};
   int lives{5}; 
+  bool collide{false};
   void PlaceFood();
   void PlacePoison();
   void Update();
