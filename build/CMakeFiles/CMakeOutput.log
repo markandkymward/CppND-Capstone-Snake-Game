@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/markward/git/CppND-Capstone-Snake-Game/build/CMakeFiles/3.17.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/e331095/git/CppND-Capstone-Snake-Game/build/CMakeFiles/3.17.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,27 +23,27 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/markward/git/CppND-Capstone-Snake-Game/build/CMakeFiles/3.17.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/e331095/git/CppND-Capstone-Snake-Game/build/CMakeFiles/3.17.2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/markward/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp
+Change Dir: /home/e331095/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp
 
 Run Build Command(s):/usr/bin/gmake cmTC_3056d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3056d.dir/build.make CMakeFiles/cmTC_3056d.dir/build
-gmake[1]: Entering directory '/home/markward/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
+gmake[1]: Entering directory '/home/e331095/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
 Building C object CMakeFiles/cmTC_3056d.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_3056d.dir/testCCompiler.c.o   -c /home/markward/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp/testCCompiler.c
+/usr/bin/cc    -o CMakeFiles/cmTC_3056d.dir/testCCompiler.c.o   -c /home/e331095/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp/testCCompiler.c
 Linking C executable cmTC_3056d
 /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3056d.dir/link.txt --verbose=1
 /usr/bin/cc      CMakeFiles/cmTC_3056d.dir/testCCompiler.c.o  -o cmTC_3056d 
-gmake[1]: Leaving directory '/home/markward/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/e331095/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
 
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/markward/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp
+Change Dir: /home/e331095/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp
 
 Run Build Command(s):/usr/bin/gmake cmTC_f0632/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f0632.dir/build.make CMakeFiles/cmTC_f0632.dir/build
-gmake[1]: Entering directory '/home/markward/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
+gmake[1]: Entering directory '/home/e331095/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
 Building C object CMakeFiles/cmTC_f0632.dir/CMakeCCompilerABI.c.o
 /usr/bin/cc   -v -o CMakeFiles/cmTC_f0632.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
 Using built-in specs.
@@ -96,7 +96,7 @@ LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/9/:/usr/lib/gcc/x86_64-redhat-linu
 COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f0632' '-mtune=generic' '-march=x86-64'
  /usr/libexec/gcc/x86_64-redhat-linux/9/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/9/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccvb3CA9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f0632 /usr/lib/gcc/x86_64-redhat-linux/9/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/9/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/9/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/9 -L/usr/lib/gcc/x86_64-redhat-linux/9/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/9/../../.. CMakeFiles/cmTC_f0632.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/9/crtend.o /usr/lib/gcc/x86_64-redhat-linux/9/../../../../lib64/crtn.o
 COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f0632' '-mtune=generic' '-march=x86-64'
-gmake[1]: Leaving directory '/home/markward/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/e331095/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
 
 
 
@@ -115,10 +115,10 @@ Parsed C implicit include dir info from above output: rv=done
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/markward/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/e331095/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp]
   ignore line: []
   ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_f0632/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f0632.dir/build.make CMakeFiles/cmTC_f0632.dir/build]
-  ignore line: [gmake[1]: Entering directory '/home/markward/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp']
+  ignore line: [gmake[1]: Entering directory '/home/e331095/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp']
   ignore line: [Building C object CMakeFiles/cmTC_f0632.dir/CMakeCCompilerABI.c.o]
   ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_f0632.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
   ignore line: [Using built-in specs.]
@@ -223,24 +223,24 @@ Parsed C implicit link information from above output:
 
 
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/markward/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp
+Change Dir: /home/e331095/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp
 
 Run Build Command(s):/usr/bin/gmake cmTC_99777/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_99777.dir/build.make CMakeFiles/cmTC_99777.dir/build
-gmake[1]: Entering directory '/home/markward/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
+gmake[1]: Entering directory '/home/e331095/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
 Building CXX object CMakeFiles/cmTC_99777.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTC_99777.dir/testCXXCompiler.cxx.o -c /home/markward/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+/usr/bin/c++     -o CMakeFiles/cmTC_99777.dir/testCXXCompiler.cxx.o -c /home/e331095/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
 Linking CXX executable cmTC_99777
 /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_99777.dir/link.txt --verbose=1
 /usr/bin/c++       CMakeFiles/cmTC_99777.dir/testCXXCompiler.cxx.o  -o cmTC_99777 
-gmake[1]: Leaving directory '/home/markward/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/e331095/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/markward/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp
+Change Dir: /home/e331095/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp
 
 Run Build Command(s):/usr/bin/gmake cmTC_d4f9b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d4f9b.dir/build.make CMakeFiles/cmTC_d4f9b.dir/build
-gmake[1]: Entering directory '/home/markward/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
+gmake[1]: Entering directory '/home/e331095/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
 Building CXX object CMakeFiles/cmTC_d4f9b.dir/CMakeCXXCompilerABI.cpp.o
 /usr/bin/c++    -v -o CMakeFiles/cmTC_d4f9b.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
 Using built-in specs.
@@ -296,7 +296,7 @@ LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/9/:/usr/lib/gcc/x86_64-redhat-linu
 COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d4f9b' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
  /usr/libexec/gcc/x86_64-redhat-linux/9/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/9/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZO5EOv.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_d4f9b /usr/lib/gcc/x86_64-redhat-linux/9/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/9/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/9/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/9 -L/usr/lib/gcc/x86_64-redhat-linux/9/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/9/../../.. CMakeFiles/cmTC_d4f9b.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/9/crtend.o /usr/lib/gcc/x86_64-redhat-linux/9/../../../../lib64/crtn.o
 COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d4f9b' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-gmake[1]: Leaving directory '/home/markward/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/e331095/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
 
 
 
@@ -321,10 +321,10 @@ Parsed CXX implicit include dir info from above output: rv=done
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/markward/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/e331095/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp]
   ignore line: []
   ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_d4f9b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d4f9b.dir/build.make CMakeFiles/cmTC_d4f9b.dir/build]
-  ignore line: [gmake[1]: Entering directory '/home/markward/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp']
+  ignore line: [gmake[1]: Entering directory '/home/e331095/git/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp']
   ignore line: [Building CXX object CMakeFiles/cmTC_d4f9b.dir/CMakeCXXCompilerABI.cpp.o]
   ignore line: [/usr/bin/c++    -v -o CMakeFiles/cmTC_d4f9b.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [Using built-in specs.]
@@ -439,7 +439,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/home/markward/git/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/3.18.2/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/e331095/git/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/3.18.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -452,13 +452,13 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/home/markward/git/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/3.18.2/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/e331095/git/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/3.18.2/CompilerIdCXX/a.out"
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/markward/git/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp
+Change Dir: /home/e331095/git/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp
 
 Run Build Command(s):/usr/bin/gmake cmTC_757f5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_757f5.dir/build.make CMakeFiles/cmTC_757f5.dir/build
-gmake[1]: Entering directory '/home/markward/git/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
+gmake[1]: Entering directory '/home/e331095/git/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
 Building C object CMakeFiles/cmTC_757f5.dir/CMakeCCompilerABI.c.o
 /usr/bin/cc   -v -o CMakeFiles/cmTC_757f5.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
 Using built-in specs.
@@ -513,7 +513,7 @@ LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linu
 COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_757f5' '-mtune=generic' '-march=x86-64'
  /usr/libexec/gcc/x86_64-redhat-linux/8/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/8/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyu9MPP.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_757f5 /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. CMakeFiles/cmTC_757f5.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/8/crtend.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o
 COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_757f5' '-mtune=generic' '-march=x86-64'
-gmake[1]: Leaving directory '/home/markward/git/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/e331095/git/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
 
 
 
@@ -532,10 +532,10 @@ Parsed C implicit include dir info from above output: rv=done
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/markward/git/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/e331095/git/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp]
   ignore line: []
   ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_757f5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_757f5.dir/build.make CMakeFiles/cmTC_757f5.dir/build]
-  ignore line: [gmake[1]: Entering directory '/home/markward/git/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp']
+  ignore line: [gmake[1]: Entering directory '/home/e331095/git/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp']
   ignore line: [Building C object CMakeFiles/cmTC_757f5.dir/CMakeCCompilerABI.c.o]
   ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_757f5.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
   ignore line: [Using built-in specs.]
@@ -640,10 +640,10 @@ Parsed C implicit link information from above output:
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/markward/git/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp
+Change Dir: /home/e331095/git/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp
 
 Run Build Command(s):/usr/bin/gmake cmTC_4deba/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4deba.dir/build.make CMakeFiles/cmTC_4deba.dir/build
-gmake[1]: Entering directory '/home/markward/git/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
+gmake[1]: Entering directory '/home/e331095/git/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
 Building CXX object CMakeFiles/cmTC_4deba.dir/CMakeCXXCompilerABI.cpp.o
 /usr/bin/c++   -v -o CMakeFiles/cmTC_4deba.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
 Using built-in specs.
@@ -701,7 +701,7 @@ LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/8/:/usr/lib/gcc/x86_64-redhat-linu
 COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4deba' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
  /usr/libexec/gcc/x86_64-redhat-linux/8/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/8/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/8/lto-wrapper -plugin-opt=-fresolution=/tmp/ccXOH3PG.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_4deba /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. CMakeFiles/cmTC_4deba.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/8/crtend.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o
 COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_4deba' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-gmake[1]: Leaving directory '/home/markward/git/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/e331095/git/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp'
 
 
 
@@ -726,10 +726,10 @@ Parsed CXX implicit include dir info from above output: rv=done
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/markward/git/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/e331095/git/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp]
   ignore line: []
   ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_4deba/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4deba.dir/build.make CMakeFiles/cmTC_4deba.dir/build]
-  ignore line: [gmake[1]: Entering directory '/home/markward/git/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp']
+  ignore line: [gmake[1]: Entering directory '/home/e331095/git/workspace/CppND-Capstone-Snake-Game/build/CMakeFiles/CMakeTmp']
   ignore line: [Building CXX object CMakeFiles/cmTC_4deba.dir/CMakeCXXCompilerABI.cpp.o]
   ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_4deba.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
   ignore line: [Using built-in specs.]

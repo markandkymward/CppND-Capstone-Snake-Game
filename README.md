@@ -1,3 +1,35 @@
+# Project Chosen : SNAKE GAME REDUX
+  A remake of the classic Snake Game with a few twists.  You start out as a single segmented snake with a world 
+  that consists of food (yellow block), poison (brown blocks) and a competetor snake (red head, green body).  Your task is stay
+  alive by eating food and avoiding both the poison and the competition.  When you eat food, you grow a segment and your speed 
+  slightly increases.  Problem is, every time you grow, so does your competition, altough he continues to travel at the same pace.
+  His movements are random, so watch out!  You can survive 5 close encounters with him - after that you die.  Also - be careful
+  of poision.  When you eat one, you lose a segment of body and the poison will be redistributed randomly.  This project will store high scores and names.
+
+# File and Class Structure:
+
+Main
+  Controller                - - - - 
+    HandleInput()----------|      |
+  Game                     |
+    Instances of Snake:    |
+      snake                |
+      bad_snake            |      SYSTEM
+    game.Run()             |
+      Update()-------------|
+  Renderer                 |      |
+      Render()-------------| - - -  
+
+# Basic Build Instructions, no other libraries required.
+
+1. Clone this repo.
+
+2. Make a build directory in the top level directory: `mkdir build && cd build; `cmake .. && make`
+
+4. Run it: `./SnakeGame`.
+
+
+
 # CPPND: Capstone Snake Game Example
 
 This is a starter repo for the Capstone project in the [Udacity C++ Nanodegree Program](https://www.udacity.com/course/c-plus-plus-nanodegree--nd213). The code for this repo was inspired by [this](https://codereview.stackexchange.com/questions/212296/snake-game-in-c-with-sdl) excellent StackOverflow post and set of responses.

@@ -1,7 +1,7 @@
 #include "renderer.h"
 #include <iostream>
 #include <string>
-#include <SDL2/SDL_ttf.h>
+
 
 Renderer::Renderer(const std::size_t screen_width,
                    const std::size_t screen_height,

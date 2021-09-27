@@ -1,6 +1,7 @@
 #include <iostream>
 #include "controller.h"
 #include "game.h"
+#include "gameover.h"
 #include "renderer.h"
 
 int main() {
@@ -18,5 +19,6 @@ int main() {
   std::cout << "Game has terminated successfully!\n";
   std::cout << "Score: " << game.GetScore() << "\n";
   std::cout << "Size: " << game.GetSnakeSize() << "\n";
+  saveHighScore(game.GetScore());
   return 0;
 }
