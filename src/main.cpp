@@ -20,5 +20,5 @@ int main() {
   std::cout << "Score: " << game.GetScore() << "\n";
   std::cout << "Size: " << game.GetSnakeSize() << "\n";
   saveHighScore(game.GetScore());
-  return 0;
+  //return 0;
 }

@@ -4,7 +4,7 @@
   alive by eating food and avoiding both the poison and the competition.  When you eat food, you grow a segment and your speed 
   slightly increases.  Problem is, every time you grow, so does your competition, altough he continues to travel at the same pace.
   His movements are random, so watch out!  You can survive 5 close encounters with him - after that you die.  Also - be careful
-  of poision.  When you eat one, you lose a segment of body and the poison will be redistributed randomly.  This project will store high scores and names.
+  of poison.  When you eat one, you lose a segment of body and the poison will be redistributed randomly.  This project will store high scores and names.
 
 # File and Class Structure:
 
@@ -14,7 +14,7 @@ Main
   Game                     |
     Instances of Snake:    |
       snake                |
-      bad_snake            |      SYSTEM
+      bad_snake            |      SYSTEM - gameOver()
     game.Run()             |
       Update()-------------|
   Renderer                 |      |
@@ -23,22 +23,25 @@ Main
 # Basic Build Instructions, no other libraries required.
 
 1. Clone this repo.
-
 2. Make a build directory in the top level directory: `mkdir build && cd build; `cmake .. && make`
+3. Run it: `./SnakeGame`.
 
-4. Run it: `./SnakeGame`.
+# Saves and reads high score from gameOver(int score) in gameover.cpp lines 12-26.  Also reads user name input.
 
+# Examples of Class Structure: Snake, Controller, Renderer all with public and private membership
 
+# Classes use member initalization, ex. class Renderer, renderer.cpp line 6
+
+# All class functions are clearly defined by names and comments, ex. class Snake in snake.cpp.
+
+# Overloaded function: UpdateWindowTitle() line 15 and 16 in Renderer.cpp
+
+# Pass by reference in Snake - UdateBody line 34
+
+# Destructor ~Renderer
 
 # CPPND: Capstone Snake Game Example
 
-This is a starter repo for the Capstone project in the [Udacity C++ Nanodegree Program](https://www.udacity.com/course/c-plus-plus-nanodegree--nd213). The code for this repo was inspired by [this](https://codereview.stackexchange.com/questions/212296/snake-game-in-c-with-sdl) excellent StackOverflow post and set of responses.
-
-<img src="snake_game.gif"/>
-
-The Capstone Project gives you a chance to integrate what you've learned throughout this program. This project will become an important part of your portfolio to share with current and future colleagues and employers.
-
-In this project, you can build your own C++ application or extend this Snake game, following the principles you have learned throughout this Nanodegree Program. This project will demonstrate that you can independently create applications using a wide range of C++ features.
 
 ## Dependencies for Running Locally
 * cmake >= 3.7
@@ -54,13 +57,6 @@ In this project, you can build your own C++ application or extend this Snake gam
   * Linux: gcc / g++ is installed by default on most Linux distros
   * Mac: same deal as make - [install Xcode command line tools](https://developer.apple.com/xcode/features/)
   * Windows: recommend using [MinGW](http://www.mingw.org/)
-
-## Basic Build Instructions
-
-1. Clone this repo.
-2. Make a build directory in the top level directory: `mkdir build && cd build`
-3. Compile: `cmake .. && make`
-4. Run it: `./SnakeGame`.
 
 
 ## CC Attribution-ShareAlike 4.0 International
